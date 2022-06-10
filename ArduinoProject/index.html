@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>아두이노 과제</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Team C</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#services">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Arduino</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#codes">Codes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#html">HTML & CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Members</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Process">Process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Epilogue">Review</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reference">References</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Ultrasonic Automatic FAN-tastic!</div>
+            <div class="masthead-heading text-uppercase">아두이노를 활용한 <br>초음파 자동 선풍기 </div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#team">Team C</a>
+        </div>
+
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">프로젝트 소개</h2>
+                <h3 class="section-subheading text-muted">아두이노 수업에서 가장 흥미로운 부품은 초음파센서였습니다.<br>
+                    가청 범위 밖의 주파수로 거리를 측정 할 수 있으므로 활용 범위가 무한적이라 생각되었습니다.</h3>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
+                        <img width="100" src="./assets/img/handfree.png" alt="">
+                        <!-- <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i> -->
+                    </span>
+                    <h4 class="my-3">Easy</h4>
+                    <p class="text-muted">장시간을 책상에서 보내는 직장인, 학생은 <br>물론이고 아기에게 손을 뗄 틈이 없는 주부 또한 유용하게 사용 할 수 있는 자동 선풍기를
+                        만들어보았습니다.
+                        한창 일에 집중 하고 있을 때 선풍기 전원을 켜는 사소한 행위 조차도 번거로울 때가 있습니다.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <img width="100" src="./assets/img/jarvis.png" alt="">
+                    </span>
+                    <h4 class="my-3">Cool</h4>
+                    <p class="text-muted">초음파 센서를 통해 사람의 착석 여부를 판별하여 자동으로 선풍기가 켜진다는 것은 어렸을 적 상상하던 스마트 데스크, 스마트 홈의
+                        일부분이였습니다.
+                        <br>저희가 도전했던 자동 선풍기는 아이언맨의 <br>자비스의 원시적인 형태가 아닐까 생각해봅니다.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <img width="100" src="./assets/img/eco.png" alt="">
+                    </span>
+                    <h4 class="my-3">Eco Friendly</h4>
+                    <p class="text-muted">자리를 비울 시 팬이 자동으로 꺼지기 때문에 집밖을 나서서 내가 선풍기를 껐나하는 걱정이 없어집니다.
+                        불필요한 전력소모 또한 막을 수 있어 <br>경제적이고 친환경적 입니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <img
+                src="https://img.freepik.com/free-photo/pleasant-looking-dark-haired-handsome-man-wearing-casual-t-shirt-with-towel-his-shoulder-sitting-table-with-laptop-holding-baby-girl-hands-giving-baby-water-drink_176532-15512.jpg">
+            <img width="626"
+                src="https://media.istockphoto.com/photos/man-suffers-from-heat-in-the-office-or-at-home-picture-id1153607558?k=20&m=1153607558&s=612x612&w=0&h=tv8fM9Br2-9VoxL6efnx-thWRYw4k8eTyFPwU_it0l8=">
+        </div>
+
+    </section>
+    <!-- project-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">필요 부품</h2>
+                <h3 class="section-subheading text-muted">클릭 시주요 부품에 관한 설명으로 이동합니다.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src=".\assets\img\slideswitch.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">슬라이드 스위치</div>
+                            <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 2-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src=".\assets\img\ultrasonic.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">초음파 센서</div>
+                            <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 3-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src=".\assets\img\dcmotor.webp" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">DC 모터</div>
+                            <div class="portfolio-caption-subheading text-muted">Identity</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src=".\assets\img\dht11.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">DHT 11</div>
+                            <div class="portfolio-caption-subheading text-muted">Branding</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Portfolio item 5-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src=".\assets\img\lcd.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">LCD 모듈</div>
+                            <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Portfolio item 6-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src=".\assets\img\switch.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">스위치</div>
+                            <div class="portfolio-caption-subheading text-muted">Photography</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- arduino-->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">기획 의도</h2>
+                <h3 class="section-subheading text-muted">자동 수동 변환 가능한 초음파 센서를 이용한 선풍기 제작</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src=".\assets\img\slideswitch.jpg"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Step 1</h4>
+                            <h4 class="subheading">모드 설정</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">슬라이드 스위치를 이용해 자동/ 수동 모드 선택</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src=".\assets/img/dcmotor.webp"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Step 2</h4>
+                            <h4 class="subheading">팬이 부착된 DC 모터 가동</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">스위치 값 수동 선택시 전원 버튼과 같이 선풍기 가동됨</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src=".\assets\img\ultrasonic.jpg"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Step 3</h4>
+                            <h4 class="subheading">초음파 센서로 거리 측정</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">스위치 값 자동 선택시 착석만 하면 초음파 센서가 값을<br> 읽어 즉시 선풍기가 가동됨</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/dht11.jpg"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>Also</h4>
+                            <h4 class="subheading">온습도 모듈 DHT11</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">스위치를 누르면 LCD 패널에 측정된 온습도 값이 출력됨</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Ultrasonic
+                            <br />
+                            Automatic
+                            <br />
+                            FAN-tastic!
+                        </h4>
+                    </div>
+                </li>
+            </ul>
+    </section>
+    <!-- codes -->
+    <section class="page-section bg-light" id="codes">
+        <div class="container codes">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Arduino Sketch</h2>
+                <h3 class="section-subheading text-muted">아두이노 회로를 가동시키기 위한 실제 코드</h3>
+            </div>
+            <img width="800" src=".\assets\img\sketch1.PNG">
+            <img width="800" src=".\assets\img\sketch2.PNG">
+            <img width="800" src=".\assets\img\sketch3.PNG">
+            <img width="800" src=".\assets\img\sketch4.PNG">
+        </div>
+        </div>
+    </section>
+    <!-- HTML & CSS -->
+    <section class="page-section bg-light" id="html">
+        <div class="container codes">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Arduino Sketch</h2>
+                <h3 class="section-subheading text-muted">아두이노 회로를 가동시키기 위한 실제 코드</h3>
+            </div>
+            <h3>초안</h3>
+            <img width="800" src=".\assets\img\oven.PNG">
+            <h3>디자인 변경 전</h3>
+            <img width="800" src=".\assets\img\before.PNG">
+            <h3>폴더 구성</h3>
+            <img width="800" src=".\assets\img\html5.PNG">
+            <h3>HTML head</h3>
+            <img width="800" src=".\assets\img\html1.PNG">
+            <h3>HTML body > nav</h3>
+            <p class="large text-muted">각 section의 ID 값으로 이동, 상단 고정<br>현재 보고 있는 위치 색상으로 표시</p>
+            <img width="800" src=".\assets\img\html2.PNG">
+            <h3>HTML body section</h3>
+            <p class="large text-muted">코드가 길어져 가독성을 높이기 위해 section태그로 나누어 정리, 주석 처리</p>
+            <img width="800" src=".\assets\img\html3.PNG">
+            <h3>조원 소개</h3>
+            <img width="800" src=".\assets\img\html4.PNG">
+        </div>
+        </div>
+    </section>
+    <!-- Team-->
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                <h3 class="section-subheading text-muted">동의과학대 인공지능 컴퓨터 정보과 1학년</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4_1">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/홍서현.jpg" alt="..." />
+                        <h4>홍서현</h4>
+                        <p class="text-muted">웹보고서, 프로그래밍</p>
+                        <p class="text-muted">조장으로 전반적인 웹 보고서를 주로 담당 하였습니다.<br>아두이노 회로도와 스케치 코드를 제작하였습니다.<br></p>
+                    </div>
+                </div>
+                <div class="col-lg-4_1">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/배용빈.jpg" alt="..." />
+                        <h4>배용빈</h4>
+                        <p class="text-muted">회로 구성, 공작</p>
+                        <p class="text-muted">회로도 제작에 참여하고, 실제 회로를 구성하였습니다.<br>모드 전환 관련 프로그래밍을 했습니다.<br>웹보고서 부품 설명 부분을
+                            제작하였습니다.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-4_1">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/신창욱.jpg" alt="..." />
+                        <h4>신창욱</h4>
+                        <p class="text-muted">PPT, 회로 구성</p>
+                        <p class="text-muted">실제 회로 구성에 참여하였습니다.<br>PPT 제작을 담당하였습니다.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4_1">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/정원중.jpg" alt="..." />
+                        <h4>정원중</h4>
+                        <p class="text-muted">자료 조사</p>
+                        <p class="text-muted">자료 조사 및 필요 이미지 수집을 담당하였습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+                        laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- process -->
+    <section class="page-section bg-light" id="Process">
+        <div class="container" height="200"style="overflow: scroll; display:flex;">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">프로젝트 과정</h2>
+                <h3 class="section-subheading text-muted">험난한 과정</h3>
+                <!-- 슬라이드 -->
+            </div>
+            <img height="436" style="margin-right:30px; margin-left:1500px" src=".\assets\img\p1.jpg">
+            <img height="436" style="margin-right:30px;" src=".\assets\img\p2.jpg">
+            <img height="436" style="margin-right:30px;" src=".\assets\img\p3.jpg">
+            <img height="436" style="margin-right:30px;" src=".\assets\img\p4.jpg">
+            <img height="436" style="margin-right:30px;" src=".\assets\img\p5.jpg">
+        </div>
+    </section>
+    <!-- epilogue-->
+    <section class="page-section bg-light" id="Epilogue">
+        <div class="container">
+            <table class="review_table">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">프로젝트 후기</h2>
+                    <h3 class="section-subheading text-muted">--------</h3>
+                </div>
+                <tbody>
+                    <tr>
+                        <td>홍서현</td>
+                        <td><p class="text-muted">시험과 과제가 겹친다는것이 이런것인지 몰랐습니다.
+
+                            아두이노 키트를 구매하지 않고 수업시간에 배운 것들 위주로 구성하여본 프로젝트라 다른 팀에 비해 난이도가 쉬워보일 수 있다고 생각합니다. 
+                            처음에는 주제 선정을 너무 성급하게 한 것이 아닌가 걱정도 했지만 막상 작업을 시작해보니 슬라이드 스위치나 DC모터 같은 작은 추가적인 부품 하나를 추가하는것도 프로그래밍을 하기에는 고난이였습니다. 
+                            코드를 짜기 위해서는 부품에 대해 이해하는 것이 우선이라는 점을 알게되었습니다.
+                            예로 들면 
+                            수업시간에 배운 서보모터는 360도 회전이 되지않아 각도를 조절하였었는데 DC모터는 HIGH만 되면 끝 없이 회전합니다. 아두이노만의 전력 공급으로는 팬정도의 무게도 회전시키기에 부족합니다.
+                            
+                            슬라이드 스위치는 보통 전원 버튼으로 쓰여 HIGH,LOW로 코드를 짜는데
+                            저희 팀처럼 모드 전환을 시키기 위해서는 if문 실행코드 내부에서 dc모터 함수를 실행시키는 생각의 전환이 필요하였습니다.
+                            
+                            회로도와 코드를 완벽하게 짜놓고 실제 회로를 연결하기 시작하니 과정중에 작동이 되지 않아도 잘못 꽂은 핀이 있는지, 부품이 정상 작동하는 것인지만 확인하면 되어서 편했습니다.
+                            
+                            무작정 시작했던 HTML 코드가 길어지니 css로 스타일을 주는 것이 너무 어려웠습니다.
+                            왜 적은대로 실행이 안되는지 이해 할 수가 없었습니다.
+                            웹보고서라 세로로 길게 읽을 수 있는 긴 형식으로 만들고 싶었습니다. 편의를 위해서는 네비게이션 바에서 id값으로 이동 가능하게 만드는 것이 필수적이라 열심히 만들었던 코드를 다 엎기로 결정하였습니다.
+                            마음을 비우고 다시 header,body,footer로 나뉜 코드를 다시 세부적으로 section별로 정리하게 되었습니다. 나름 오븐을 이용해 프론트를 계획적으로 작성 했다고 생각했었는데, 이러한 과정을 겪으며 훨씬 더 세부적인 계획을 세워야했음을 깨달았습니다.
+                            
+                            조장으로서 부족한 점이 많아 수줍음이 많은 조원들을 끌고가는것이 어려웠습니다.
+                            조별 과제인 만큼 
+                            더 크고 대단한 프로젝트를 하고 싶었지만 조원들의
+                            의지가 부족한 것 같아 불평이 생기기도 했었습니다.
+                            생각을 바꿔 동기부여를 주려고 노력하니 
+                            잘 따라와주어 끝까지 힘을 내서 마무리 할 수 있었습니다. 공부 외에도 배운 점이 많은 과제였습니다.
+                            
+                            
+                            </p></td>
+                    </tr>
+                    <tr>
+                        <td>배용빈</td>
+                        <td><p>후기입니다</p></td>
+                    </tr>
+                    <tr>
+                        <td>신창욱</td>
+                        <td><p class="text-muted">개인사정으로 인해 수업에 자주 참여를 못하였지만 저희 조원들이 함께 참여 할 수 있도록 이끌어 주고 어려운게 있으면 도와줘서 ppt 만들때 더욱 수월하게 작업 할수 있었습니다.</p></td>
+                    </tr>
+                    <tr>
+                        <td>정원중</td>
+                        <td><p class="text-muted">제가 개발 못난 점을 저희조원들이 제꺼 몫까지 더 도와주셔서 ppt 만들때 수월하게 작업 할수 있었습니다.</p></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            
+
+            
+        </div>
+    </section>
+    <!-- reference -->
+    <section class="page-section bg-light" id="reference">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Reference</h2>
+                <h3 class="section-subheading text-muted">Click link to download!</h3>
+                <!-- 슬라이드 -->
+            </div>
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#services">Project</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Arduino</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Plans</a></li>
+                <li class="nav-item"><a class="nav-link" href="#team">Members</a></li>
+                <li class="nav-item"><a class="nav-link" href="#team">Codes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Web Report</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">References</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Clients
+    <div class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg"
+                            alt="..." aria-label="Microsoft Logo" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg"
+                            alt="..." aria-label="Google Logo" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg"
+                            alt="..." aria-label="Facebook Logo" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg"
+                            alt="..." aria-label="IBM Logo" /></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Contact -->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Contact Us</h2>
+                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token! -->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                                data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Your Message *"
+                                data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center text-white mb-3">
+                        <div class="fw-bolder">Form submission successful!</div>
+                        To activate this form, sign up at
+                        <br />
+                        <a
+                            href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+                <!-- Submit Button-->
+                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled"
+                        id="submitButton" type="submit">Send Message</button></div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2022</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                    nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Threads
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Illustration
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                    nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Explore
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Graphic Design
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                    nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Finish
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Identity
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 4 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                    nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Lines
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Branding
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 5 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                    nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Southwest
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Website Design
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 6 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                    nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Window
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Photography
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+</body>
+
+</html>
